@@ -1,7 +1,8 @@
 # Continuous Intelligence App
 
-- Repository: [Capstone](https://github.com/HMas522/cintel-05-live-updates)
-- Website: [Capstone](https://HMas522.github.io/cintel-05-live-updates/)
+- Repository: [Hmass522 GitHub](https://github.com/HMas522/Capstone)
+- Overleaf Report [Hmassey_Overleaf] (https://www.overleaf.com/read/czmjjqvmpcjy#18f9b6)
+- Shiny Website: [Shiny Website](https://HMas522.github.io/cintel-05-live-updates/)
 - Author: [Hayley Massey](https://github.com/HMas522)
 
 -----
