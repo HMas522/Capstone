@@ -57,7 +57,7 @@ def get_API_key():
     # Keep secrets in a .env file - load it, read the values.
     # Load environment variables from .env file
     load_dotenv()
-    key = os.getenv("OPEN_WEATHER_API_KEY")
+    key = os.getenv("OPEN_FOOTBALL_API_KEY")
     return key
 
 
