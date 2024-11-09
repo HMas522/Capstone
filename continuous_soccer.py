@@ -61,19 +61,6 @@ def get_API_key():
     return key
 
 
-def lookup_lat_long(location):
-    """Return the latitude and longitude for the given location."""
-    locations_dictionary = {
-        "Kansas City US": {"latitude": 39.0997, "longitude": -94.5786},
-        "Denver US": {"latitude": 39.7392, "longitude": -104.9847},
-        "Maryville MO": {"latitude": 40.346102, "longitude": -94.872471},
-    }
-    answer_dict = locations_dictionary[location]
-    lat = answer_dict["latitude"]
-    long = answer_dict["longitude"]
-    return lat, long
-
-
 async def get_temperature_from_openweathermap(lat, long):
     logger.info("Calling get_temperature_from_openweathermap for {lat}, {long}}")
     api_key = get_API_key()
