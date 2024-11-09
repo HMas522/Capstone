@@ -17,7 +17,7 @@ from shiny import App, ui   # pip install shiny
 import shinyswatch          # pip install shinyswatch
 
 # Finally, import what we need from other local code files.
-from continuous_location import update_csv_location
+from continuous_soccer import update_csv_location
 # from continuous_stock import update_csv_stock
 # from mtcars_server import get_mtcars_server_functions
 # from mtcars_ui_inputs import get_mtcars_inputs
