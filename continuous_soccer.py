@@ -81,11 +81,11 @@ def init_csv_file(file_path):
     df_empty.to_csv(file_path, index=False)
 
 
-async def update_csv_location():
-    """Update the CSV file with the latest location information."""
-    logger.info("Calling update_csv_location")
+async def update_csv_soccer():
+    """Update the CSV file with the latest soccer information."""
+    logger.info("Calling update_csv_soccer")
     try:
-        locations = ["Kansas City US", "Denver US", "Maryville MO"]
+        #Teams? = ["Kansas City US", "Denver US", "Maryville MO"]
         update_interval = 60  # Update every 1 minute (60 seconds)
         total_runtime = 15 * 60  # Total runtime maximum of 15 minutes
         num_updates = 10  # Keep the most recent 10 readings
@@ -96,7 +96,7 @@ async def update_csv_location():
         # Use a deque to store just the last, most recent 10 readings in order
         records_deque = deque(maxlen=num_updates)
 
-        fp = Path(__file__).parent.joinpath("data").joinpath("mtcars_location.csv")
+        fp = Path(__file__).parent.joinpath("data").joinpath("soccer.csv")
 
         # Check if the file exists, if not, create it with only the column headings
         if not os.path.exists(fp):
